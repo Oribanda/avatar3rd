@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 //下記を追加する
 use App\Models\Avatar;
 
-class AvatarController extends Controller
+class ImgController extends Controller
 {
     public function index()
     {

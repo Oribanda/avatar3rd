@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Avatars extends Migration
+class Imgs extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class Avatars extends Migration
      */
     public function up()
     {
-        Schema::create('avatars', function (Blueprint $table) {
+        Schema::create('imgs', function (Blueprint $table) {
             $table->id();
             //下記を追記する
             $table->foreignId('user_id');
@@ -30,6 +30,6 @@ class Avatars extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('avatars');
+        Schema::dropIfExists('imgs');
     }
 }
